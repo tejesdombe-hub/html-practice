@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- CHANGE: Helps the page render correctly on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CHANGE: Provides a meaningful description for search engines -->
+    <meta name="description"
+        content="Learn the fundamentals of modern web development, including HTML, CSS, JavaScript, and how browsers work.">
+
+    <meta name="author" content="Tejas Dombe">
+
+    <!-- CHANGE: Added Open Graph metadata for better social sharing -->
+    <meta property="og:title" content="Understanding Modern Web Development">
+    <meta property="og:description"
+        content="Learn the fundamentals of modern web development, including HTML, CSS, JavaScript, and browsers.">
+
+    <title>Understanding Modern Web Development</title>
+</head>
+
+<body>
+
+    <!-- CHANGE: Added a skip link so keyboard/screen-reader users
+         can quickly move to the main content -->
+    <a href="#main-content">Skip to main content</a>
+
+    <header>
+
+        <!-- CHANGE: Kept the website title in the header as descriptive content -->
+        <p>Web Development Fundamentals</p>
+
+        <!-- CHANGE: Added an accessible label to identify the navigation -->
+        <nav aria-label="Main navigation">
+
+            <a href="#article">Article</a>
+            <a href="#video">Video</a>
+            <a href="#comments">Comments</a>
+            <a href="#resources">Resources</a>
+
+        </nav>
+
+    </header>
+
+    <!-- CHANGE: Added an id so the skip link can target the main content -->
+    <main id="main-content">
+
+        <article id="article">
+
+            <h1>Understanding Modern Web Development</h1>
+
+            <p>
+                Modern web development uses HTML, CSS and JavaScript
+                to create interactive and responsive websites.
+            </p>
+
+            <h2>How Websites Work</h2>
+
+            <p>
+                HTML provides the structure of a webpage, CSS controls
+                its appearance, and JavaScript adds behavior and
+                interactivity.
+            </p>
+
+            <h3>The Browser</h3>
+
+            <p>
+                The browser parses HTML and CSS, creates the necessary
+                structures, and then renders the webpage on the screen.
+            </p>
+
+            <figure>
+
+                <!-- CHANGE: Improved alt text to clearly describe the image.
+                     Also removed the empty srcset attribute. -->
+                <img
+                    src="img101.jpeg"
+                    alt="Illustration representing modern web development">
+
+                <figcaption>
+                    Basic web development concept.
+                </figcaption>
+
+            </figure>
+
+            <section id="video">
+
+                <h2>Web Development Video</h2>
+
+                <!-- CHANGE: Removed the empty video source.
+                     An empty src attribute can cause unnecessary requests/errors.
+                     The YouTube video below provides the actual video content. -->
+
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/BsDoLVMnmZs"
+                    title="Video explaining the basics of HTML"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+
+            </section>
+
+        </article>
+
+        <aside id="resources">
+
+            <h2>Related Articles</h2>
+
+            <ul>
+
+                <li>
+                    <a href="https://www.w3schools.com/html/html_intro.asp">
+                        Introduction to HTML
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.w3schools.com/css/css_intro.asp">
+                        Introduction to CSS
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.geeksforgeeks.org/javascript/introduction-to-javascript/">
+                        Introduction to JavaScript
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <section id="comments">
+
+            <h2>Comments</h2>
+
+            <!-- CHANGE: Added an accessible label to the form -->
+            <form aria-label="Comment form">
+
+                <div>
+
+                    <!-- CHANGE: Existing label is correctly connected
+                         to the input using for="name" and id="name" -->
+                    <label for="name">Name:</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required>
+
+                </div>
+
+                <div>
+
+                    <label for="email">Email:</label>
+
+                    <!-- CHANGE: Added autocomplete="email" to help
+                         users and assistive technologies -->
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required>
+
+                </div>
+
+                <div>
+
+                    <label for="comment">Comment:</label>
+
+                    <textarea
+                        id="comment"
+                        name="comment"
+                        rows="5"
+                        required>
+                    </textarea>
+
+                </div>
+
+                <button type="submit">
+                    Submit Comment
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 Web Development Fundamentals
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+
